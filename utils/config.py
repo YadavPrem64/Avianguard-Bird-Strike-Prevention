@@ -12,7 +12,9 @@ CONFIDENCE_THRESHOLD = 0.5  # Minimum confidence for bird detection
 NMS_THRESHOLD = 0.4  # Non-maximum suppression threshold
 INPUT_SIZE = (640, 640)  # Model input size
 MODEL_PATH = "data/models/yolov8n.pt"  # Default YOLOv8 model path
-BIRD_CLASS_IDS = [14, 15, 16]  # COCO class IDs for birds (bird, cat, dog as proxy)
+BIRD_CLASS_IDS = [14, 15, 16]  # COCO class IDs: 14=bird (primary), 15=cat, 16=dog (used as proxies for testing)
+                                # Note: In production, use only [14] or fine-tune model on bird-specific dataset
+                                # Cat/dog classes allow testing with readily available videos
 
 # ============================================================================
 # FUZZY LOGIC RANGES

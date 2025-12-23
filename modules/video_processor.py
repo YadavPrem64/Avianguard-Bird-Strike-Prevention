@@ -5,6 +5,7 @@ Handles video input/output operations and frame processing pipeline.
 
 import cv2
 import numpy as np
+import os
 from typing import Optional, Callable, Generator, Tuple
 import utils.config as config
 from utils.helpers import setup_logging, ensure_directory
@@ -278,9 +279,6 @@ class VideoProcessor:
         if self.writer is not None:
             self.writer.release()
             logger.info("Video writer released")
-
-
-import os
 
 
 class WebcamProcessor(VideoProcessor):
