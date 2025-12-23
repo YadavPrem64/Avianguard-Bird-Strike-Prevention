@@ -1,0 +1,33 @@
+# AvianGuard IRAPS - Requirements
+# Core Detection & Computer Vision
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Numerical & Scientific Computing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Fuzzy Logic & Control Systems
+scikit-fuzzy>=0.4.2
+
+# Kalman Filtering & Trajectory Prediction
+filterpy>=1.4.5
+
+# Dashboard & Visualization
+streamlit>=1.28.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+Pillow>=10.0.0
+
+# Audio Alerts
+pyttsx3>=2.90
+
+# Multi-Object Tracking
+deep-sort-realtime>=1.3.2
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
